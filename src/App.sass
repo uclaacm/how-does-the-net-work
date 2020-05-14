@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Chivo&display=swap');
+
+//This is a sass file, which is a CSS preprocessor
+//basically where we customize our bulma designs!
+
+//NOTE: some changes here won't show if you override them 
+//with changes in the App.css file, so be mindful!
+//example [1] below...
+
+//Color-Schemes
+$green: #b5d900;
+
+
+//Global Variables!
+$font: 'Chivo', ;
+$title-color: $green;
+$footer-background-color: $green;
+
+//$background: blue;
+//[1] ^^ doesn't show because it's already in App.css 
+
+//Other global bulma variables you can manipulate...
+//https://bulma.io/documentation/customize/variables/ 
+
+//Import only the stylings you need from bulma 
+@import '../../../node_modules/bulma/sass/utilities/_all.sass';
+@import '../../../node_modules/bulma/sass/base/_all.sass';
+@import '../../../node_modules/bulma/sass/elements/title.sass';
+@import '../../../node_modules/bulma/sass/layout/footer.sass';
+
+//Uncomment below to see how input area changes 
+//@import '../../../node_modules/bulma/sass/elements/form.sass';
+//@import '../../../node_modules/bulma/sass/form/shared.sass';
+//@import '../../../node_modules/bulma/sass/form/input-textarea.sass';
