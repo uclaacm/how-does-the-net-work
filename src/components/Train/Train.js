@@ -6,6 +6,8 @@ import router from '../../img/router.png';
 import modem from '../../img/modem.png';
 import isp from '../../img/isp.png';
 
+import { faDesktop, faBroadcastTower, faHome } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Home() {
     return <img src={{home}} alt="home" />
@@ -40,7 +42,7 @@ class Train extends React.Component {
                 <h1>There's a lot of hardware involved in accessing the internet. 
                     <br></br>
                     Mouse over any of the objects to learn ore about them</h1>
-                <a><img style={{float:'left'}, {flex: 1, flexDirection:'column'}} className="resize-img" src={home} alt="home" /></a>
+                <FontAwesomeIcon icon={faHome} size="8x" transform="left-35"></FontAwesomeIcon>
                 <br></br>
                 <a><center><img className="resize-img" src={computer} alt="computer" /> --> 
                     <img className="resize-img" src={router} alt="router" /> -->
