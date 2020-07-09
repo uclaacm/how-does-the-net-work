@@ -24,31 +24,36 @@ class Intro extends React.Component {
                 <b className="header">What is the internet?</b>
                 <div className="text">It's a way for computers to connect to other computers.</div>
                 <div class="intro-container">
-                    <div style={{float:'left'}}>
-                        <br></br>
-                        <FontAwesomeIcon icon={faDesktop} size="7x" transform="right-65, down-50"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faDesktop} size="6x" transform="right-48, down-80"></FontAwesomeIcon>
-                        <br></br>
-                        <br></br>
-                        <FontAwesomeIcon icon={faDesktop} size="5x" transform="right-65, down-95"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faDesktop} size="4x" transform="right-45, down-138"></FontAwesomeIcon>
+                    <div style={{alignContent:"center", margin:'20px'}}>
+                    <FontAwesomeIcon icon={faBroadcastTower} size="8x"></FontAwesomeIcon>
                     </div>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <FontAwesomeIcon icon={faBroadcastTower} size="8x" transform="right-5"></FontAwesomeIcon>
-                    <FontAwesomeIcon icon={faServer} size="8x" transform="left-13, down-20"></FontAwesomeIcon>
-                    <div style={{float:'right'}}>
-                        <FontAwesomeIcon icon={faDesktop} size="7x" transform="left-55, down-43"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faDesktop} size="6x" transform="left-75, down-73"></FontAwesomeIcon>
-                        <br></br>
-                        <br></br>
-                        <FontAwesomeIcon icon={faDesktop} size="5x" transform="left-60, down-88"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faDesktop} size="4x" transform="left-80, down-128"></FontAwesomeIcon>
+                    <div style={{alignContent:"center", margin:'20px'}}>
+                    <FontAwesomeIcon icon={faServer} size="8x"></FontAwesomeIcon>
+                    </div>
+                    <div class="tier-1" style={{alignItems:"center"}}>
+                        <FontAwesomeIcon icon={faDesktop} size="7x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faDesktop} size="7x"></FontAwesomeIcon>
+                    </div>
+                    <div class="tier-2" style={{alignItems:"center"}}>
+                        <FontAwesomeIcon icon={faDesktop} size="6x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faDesktop} size="6x"></FontAwesomeIcon>
+                    </div>
+                    <div class="tier-3" style={{alignItems:"center"}}>
+                        <FontAwesomeIcon icon={faDesktop} size="5x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faDesktop} size="5x"></FontAwesomeIcon>
+                    </div>
+                    <div class="tier-4" style={{alignItems:"center"}}>
+                        <FontAwesomeIcon icon={faDesktop} size="4x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faDesktop} size="4x"></FontAwesomeIcon>
                     </div>
                 </div>
-                <p className="text" style={{position: 'absolute', left:200}}>The internet is actually a bunch of connections<br></br> connecting computers to other computers.</p>
-                <p className="text" style={{position: 'absolute', right:200}}>Some of these computers host websites (like ours!)</p>
+
+                <div className="text-left">
+                    <p className="text">The internet is actually a bunch of connections<br></br> connecting computers to other computers.</p>
+                </div>
+                <div className="text-right">
+                    <p className="text">Some of these computers host websites (like ours!)</p>
+                </div>
                 <br></br>
                 <br></br>
                 <br></br>

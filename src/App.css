@@ -39,6 +39,7 @@
 
 .intro {
   background-color: #a1d900;
+  padding-bottom: 30px;
 }
 
 .greenbackground {
@@ -46,11 +47,13 @@
 }
 
 .intro-container {
-  height: 850px;
   border: 15px solid lightgrey;
-  margin: 75px;
+  margin: 100px;
   background: #ffffff;
   border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 25px !important;
+  align-items: center;
 }
 
 .left {
@@ -80,6 +83,20 @@
   font-size: 20px;
 }
 
+.text-left {
+  left: 0px;
+  width: 50%;
+  position: absolute;
+  text-align: center;
+}
+
+.text-right {
+  right: 0px;
+  width: 50%;
+  position: absolute;
+  text-align: center;
+}
+
 .button {
   background-color: #a1d900; /* Green */
   border: none;
@@ -94,4 +111,62 @@
 
 .button:hover {
   background-color: #e9e6df;
+}
+
+/* Intro Container Contents */
+.tier-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tier-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tier-3 {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tier-4 {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Intro Container Contents - for small screens */
+@media only screen and (max-width: 767px) {
+  .tier-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-bottom: 20px;
+  }
+
+  .tier-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .tier-3 {
+    display: none;
+  }
+
+  .tier-4 {
+    display: none;
+  }
 }

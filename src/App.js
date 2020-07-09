@@ -21,7 +21,7 @@ function App() {
       <header className="App-header">
         <Home />
       </header>
-      <div><center><a href="#ScrollToIntro"><button className="button">Let's go!</button></a></center></div>
+      <div><center><a><button className="button">Let's go!</button></a></center></div>
       <br></br>
       <Intro/>
       <Train/>
