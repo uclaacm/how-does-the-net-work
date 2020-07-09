@@ -7,6 +7,7 @@ import Footer from "../src/components/Footer/Footer";
 import Intro from "../src/components/Intro/Intro";
 import Train from "../src/components/Train/Train";
 
+
 import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -20,6 +21,8 @@ function App() {
       <header className="App-header">
         <Home />
       </header>
+      <div><center><a href="#ScrollToIntro"><button className="button">Let's go!</button></a></center></div>
+      <br></br>
       <Intro/>
       <Train/>
       <Footer/>

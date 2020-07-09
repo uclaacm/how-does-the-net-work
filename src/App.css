@@ -46,7 +46,7 @@
 }
 
 .intro-container {
-  height: 450px;
+  height: 850px;
   border: 15px solid lightgrey;
   margin: 75px;
   background: #ffffff;
@@ -81,7 +81,7 @@
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #a1d900; /* Green */
   border: none;
   border-radius: 12px;
   color: white;
@@ -90,4 +90,8 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.button:hover {
+  background-color: #e9e6df;
 }
