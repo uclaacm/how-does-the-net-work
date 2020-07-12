@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import '../../App.css';
-import computer from '../../img/computer.png';
+import Anime, {anime} from 'react-anime';
 
-import { faDesktop, faBroadcastTower, faServer, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faDesktop, faBroadcastTower, faServer, faHome, faArrowsAltV, faRss } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-function Computer() {
-    return <img src={{computer}} alt="computer" />
-}
 
 //See it's instance under App.js
 class Intro extends React.Component {
@@ -23,28 +19,32 @@ class Intro extends React.Component {
                 <br></br>
                 <b className="header">What is the internet?</b>
                 <div className="text">It's a way for computers to connect to other computers.</div>
-                <div class="intro-container">
+                <div class="intro-container" style={{alignSelf:'center'}}>
                     <div style={{alignContent:"center", margin:'20px'}}>
-                    <FontAwesomeIcon icon={faBroadcastTower} size="8x"></FontAwesomeIcon>
+                        <Anime scale={[0.75, 1]} loop={true} translateY={[-5]}>
+                            <FontAwesomeIcon icon={faBroadcastTower} size="8x"></FontAwesomeIcon>
+                        </Anime>
                     </div>
                     <div style={{alignContent:"center", margin:'20px'}}>
-                    <FontAwesomeIcon icon={faServer} size="8x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faServer} size="8x"></FontAwesomeIcon>
                     </div>
-                    <div class="tier-1" style={{alignItems:"center"}}>
+                    <div style={{alignContent:"center", margin:'20px'}}>
                         <FontAwesomeIcon icon={faDesktop} size="7x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faArrowsAltV} size="8x" style={{marginLeft:'250px', marginRight:'250px'}}></FontAwesomeIcon>
                         <FontAwesomeIcon icon={faDesktop} size="7x"></FontAwesomeIcon>
                     </div>
-                    <div class="tier-2" style={{alignItems:"center"}}>
-                        <FontAwesomeIcon icon={faDesktop} size="6x"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faDesktop} size="6x"></FontAwesomeIcon>
-                    </div>
-                    <div class="tier-3" style={{alignItems:"center"}}>
-                        <FontAwesomeIcon icon={faDesktop} size="5x"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faDesktop} size="5x"></FontAwesomeIcon>
-                    </div>
-                    <div class="tier-4" style={{alignItems:"center"}}>
-                        <FontAwesomeIcon icon={faDesktop} size="4x"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faDesktop} size="4x"></FontAwesomeIcon>
+                    <Anime scale={[1, 1]} delay={800} loop={true} translateY={[-50]} translateX={[50]}>
+                        <span class="fa-layers fa-fw">
+                        <FontAwesomeIcon icon={faRss} size="7x" transform="left-40 up-31" ></FontAwesomeIcon>
+                        </span>
+                    </Anime>
+                    <Anime scale={[1,1]} delay={800} loop={true} translateY={[-50]} translateX={[-50]}>
+                        <span class="fa-layers fa-fw">
+                        <FontAwesomeIcon className="fa-flip-horizontal" icon={faRss} size="7x" transform="right-25 up-33" ></FontAwesomeIcon>
+                        </span>
+                    </Anime>
+                    <div style={{marginBottom:'20px'}}>
+                        <a style={{fontSize:'30px', color:'black'}} href="http://www.uclaacm.com/">uclaacm.com</a>
                     </div>
                 </div>
 

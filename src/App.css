@@ -48,7 +48,7 @@
 
 .intro-container {
   border: 15px solid lightgrey;
-  margin: 100px;
+  margin: 10%;
   background: #ffffff;
   border-radius: 25px;
   margin-top: 20px;
@@ -117,33 +117,14 @@
 .tier-1 {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 75%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.tier-2 {
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.tier-3 {
-  display: flex;
-  justify-content: space-between;
-  width: 55%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.tier-4 {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+a:hover {
+  color: #a1d900 !important;
+  background-color: transparent;
 }
 
 /* Intro Container Contents - for small screens */
@@ -153,20 +134,5 @@
     justify-content: space-between;
     width: 35%;
     margin-bottom: 20px;
-  }
-
-  .tier-2 {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-bottom: 20px;
-  }
-
-  .tier-3 {
-    display: none;
-  }
-
-  .tier-4 {
-    display: none;
   }
 }

@@ -23,7 +23,7 @@ class Home extends React.Component{
                 <h1 class="title is-1">Websites on the Internet</h1>
                 <br></br>
                 <Anime duration={1000} easing="linear" direction="alternate" loop={true} translateY={[-15]}>
-                    <FontAwesomeIcon icon={faWifi} size="3x" color="Mediumslateblue"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faWifi} size="3x" color="#a1d900"></FontAwesomeIcon>
                 </Anime>
                 <FontAwesomeIcon icon={faDesktop} size="7x"></FontAwesomeIcon>
                 <Anime scale={[0,1]} delay={800}>
