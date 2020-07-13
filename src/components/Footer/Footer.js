@@ -3,11 +3,6 @@ import React from 'react';
 //Here's an example on making a component: the footer! 
 //See it's instance under App.js
 class Footer extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
-
     render = () => {
         return(
             <footer class="footer">

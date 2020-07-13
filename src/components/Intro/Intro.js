@@ -1,17 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import '../../App.css';
-import Anime, {anime} from 'react-anime';
+import Anime from 'react-anime';
 
-import { faDesktop, faBroadcastTower, faServer, faHome, faArrowsAltV, faRss } from '@fortawesome/free-solid-svg-icons'
+import { faDesktop, faBroadcastTower, faServer, faArrowsAltV, faRss } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 //See it's instance under App.js
 class Intro extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
     render = () => {
         return(
             <div class="content has-text-centered" className="intro">

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.sass';
 import './App.css';
 import Home from "./components/Home/Home";
@@ -8,7 +7,6 @@ import Intro from "../src/components/Intro/Intro";
 import Train from "../src/components/Train/Train";
 
 
-import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -21,7 +19,7 @@ function App() {
       <header className="App-header">
         <Home />
       </header>
-      <div><center><a><button className="button">Let's go!</button></a></center></div>
+      <div><center><button className="button">Let's go!</button></center></div>
       <br></br>
       <Intro/>
       <Train/>
